@@ -1,25 +1,25 @@
 {
-  "active": false,
-  "hostname": "rdpfree-2",
+  "active": true,
+  "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
     "ram_gb": 16.0,
     "cpu_threads": 4,
-    "disk_free_gb": 82.2
+    "disk_free_gb": 79.6
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-13T14:52:04Z",
-  "expires_at": "2026-10-13T20:47:04Z",
+  "started_at": "2026-10-13T14:54:20Z",
+  "expires_at": "2026-10-13T20:49:20Z",
   "duration_menit": 355,
-  "run_id": "38417020819",
+  "run_id": "38417357109",
   "run_attempt": "1",
-  "run_number": "2",
-  "run_url": "https://github.com/valaurv/Rdpto/actions/runs/38417020819",
+  "run_number": "3",
+  "run_url": "https://github.com/valaurv/Rdpto/actions/runs/38417357109",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -39,15 +39,19 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "note": "Tailscale menolak koneksi. Periksa masa berlaku auth key dan persetujuan perangkat di tailnet.",
-      "status": "failed",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "status": "ok",
+      "hostname": "rdpfree-3",
+      "ip": "100.86.228.43",
+      "magicdns": "rdpfree-3.tail84e1ca.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+    },
+    "mode": "tailscale"
   },
-  "stopped_at": "2026-10-13T14:52:16Z"
+  "media": {
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "microphone": "rdp_capture_enabled"
+  }
 }
