@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "hostname": "rdpfree-1",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -41,10 +41,11 @@
   "akses": {
     "tailscale": {
       "status": "ok",
-      "magicdns": "rdpfree-1.tail84e1ca.ts.net.",
-      "hostname": "rdpfree-1",
-      "ip": "100.103.61.110",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "",
+      "magicdns": "",
+      "hostname": "",
+      "funnel_addr": ""
     },
     "mode": "tailscale"
   },
@@ -53,5 +54,55 @@
     "wallpaper": "xyverse_configured_for_user_logon",
     "microphone": "rdp_capture_enabled",
     "audio_output": "rdp_playback_enabled"
-  }
+  },
+  "samp": {
+    "samp_installed": false,
+    "directplay": "Enabled",
+    "netfx3": "Enabled",
+    "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+    "gta_installed": false,
+    "directx": "verified_x86_x64",
+    "vcredist": "verified_x86_x64_and_2013_x86",
+    "status": "dependencies_ready",
+    "play_tested": false
+  },
+  "game_environment": {
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "windows_server": true,
+    "runner": "windows-2022",
+    "play_tested": false,
+    "hypervisor_present": true
+  },
+  "games": {
+    "roblox": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "minecraft_java": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "minecraft_bedrock": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "samp": {
+      "status": "dependencies_ready",
+      "samp_installed": false,
+      "gta_installed": false,
+      "note": "DirectX legacy diverifikasi x86/x64. GTA SA dan SA-MP dipasang manual dari sumber sah. Game, GPU, dan koneksi server belum diuji.",
+      "game_dir": null
+    }
+  },
+  "host_tools": {
+    "winrar": "verified 7.23.0 (vendor trial; license not included)",
+    "vcredist": "verified_current_v14_x86_x64",
+    "xampp": "failed",
+    "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
+    "errors": [
+      "XAMPP: Installer timed out"
+    ],
+    "public_port": false
+  },
+  "stopped_at": "2026-10-13T14:48:09Z"
 }
